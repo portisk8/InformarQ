@@ -1,0 +1,154 @@
+{{#extend 'layout.html'}}
+<head>
+    <meta charset="utf-8">
+    <!-- www.phpied.com/conditional-comments-block-downloads/ -->
+    <!-- Always force latest IE rendering engine
+         (even in intranet) & Chrome Frame
+         Remove this if you use the .htaccess -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge{{=not request.is_local and ',chrome=1' or ''}}">
+    <!--  Mobile Viewport Fix
+          j.mp/mobileviewport & davidbcalhoun.com/2010/viewport-metatag
+          device-width: Occupy full width of the screen in its current orientation
+          initial-scale = 1.0 retains dimensions instead of zooming out if page height > device height
+          user-scalable = yes allows the user to zoom in -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>** Cronograma de Actividades **</title>
+    <!-- http://dev.w3.org/html5/markup/meta.name.html -->
+    <meta name="application-name" content="{{=request.application}}">
+    <!-- Speaking of Google, don't forget to set your site up:
+         http://google.com/webmasters -->
+    <meta name="google-site-verification" content="">
+    <!-- include stylesheets -->
+    <link rel="stylesheet" href="{{=URL('static','css/infoController.css')}}"/>
+    <!-- Material Lite -->
+    <!--<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.indigo-pink.min.css">-->
+    <!-- Bootstrap -->
+     <link rel="stylesheet" href="{{=URL('static','css/bootstrap.min.css')}}"/>
+    <link rel="stylesheet" href="{{=URL('static','css/web2py-bootstrap3.css')}}"/>
+    
+    <link rel="shortcut icon" href="{{=URL('static','images/favicon.ico')}}" type="image/x-icon">
+    <link rel="apple-touch-icon" href="{{=URL('static','images/favicon.png')}}">
+    <!-- All JavaScript at the bottom, except for Modernizr which enables
+         HTML5 elements & feature detects -->
+    <script src="{{=URL('static','js/modernizr-2.8.3.min.js')}}"></script>
+    <!--[if lt IE 9]>
+        <script src="{{=URL('static','js/respond-1.4.2.min.js')}}"></script>
+        <![endif]-->
+    <!-- Favicons -->
+    {{include 'web2py_ajax.html'}} <!-- this includes jquery.js, calendar.js/.css and web2py.js -->
+    {{block head}}{{end}}
+    {{
+    # using sidebars need to know what sidebar you want to use
+    mc0 = 'col-md-12'
+    mc1 = 'col-md-9'
+    mc2 = 'col-md-6'
+    left_sidebar_enabled = globals().get('left_sidebar_enabled', False)
+    right_sidebar_enabled = globals().get('right_sidebar_enabled', False)
+    middle_column = {0: mc0, 1: mc1, 2: mc2}[
+    (left_sidebar_enabled and 1 or 0)+(right_sidebar_enabled and 1 or 0)]
+    }}
+  </head>
+  <body>
+    <!-- Aca va mi Codigo -->
+<nav id="navbar1" class="navbar navbar-default  navbar-collapse" role="tablist">
+  <div class="container">
+  	<center>
+	    <a href="#bienal" aria-controls="home" role="tab" data-toggle="tab"><button id="buttonNavbar" type="button" class="btn btn-default navbar-btn"><img id="button-Nav-Img" src="{{=URL('static','images/info-bienal.jpg')}}"></button></a>
+	    <a href="#urunday" aria-controls="profile" role="tab" data-toggle="tab"><button id="buttonNavbar" type="button" class="btn btn-default navbar-btn"><img id="button-Nav-Img" src="{{=URL('static','images/info-urunday.jpg')}}"></button></a>
+	    <a href="#artistas" aria-controls="settings" role="tab" data-toggle="tab"><button id="buttonNavbar" type="button" class="btn btn-default navbar-btn "><img id="button-Nav-Img" src="{{=URL('static','images/info-artistas.png')}}"></span></button></a>
+  	</center>
+  </div>
+</nav>
+ 
+
+  <!-- Tab panes -->
+<div class="tab-content">
+	<div role="tabpanel" class="tab-pane active" id="bienal">
+		<div id="jumbotron-bienal" class="jumbotron">
+		  <h1>Hello, world!</h1>
+		  <p>...</p>
+		  <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+		</div>
+	</div>
+	<div role="tabpanel" class="tab-pane" id="urunday">
+    	<p>Fundación Urunday
+<p>Resistencia se esculpe y de esta impronta volumétrica y policromada nace la Fundación Urunday, en noviembre de 1989. Una gestación que tiene como consigna permanente unir a los escultores de Argentina, de América y del mundo, de cobijarlos en su tierra, de desafiarlos a crear en cada nuevo concurso. Generando acontecimientos hasta entonces inéditos en el país, que se erguieron como inagotables proveedores de obras que enriquecen un patrimonio único.
+
+<p>Desde el Primer Concurso de Escultura en Madera en la Plaza Central, en 1988, hasta las internacionalmente prestigiosas Bienales del Chaco de nuestros días, la Fundación Urunday trabaja incansablemente para hacer de cada concurso, una verdadera celebración de la identidad de los chaqueños.
+
+<p>La trascendencia alcanzada por estos concursos ha logrado insertar a Resistencia en los circuitos internacionales de escultura y desde el año 1997 cuentan con el apoyo de la UNESCO, convirtiéndose en uno de los más importantes escenarios del mundo de esta disciplina artística.
+
+<p>La Fundación Urunday junto al Gobierno del Chaco (a través de SECHEEP, su empresa de suministro eléctrico) y la Municipalidad de Resistencia propicia el emplazamiento de nuevas obras en el espacio público, trabajo que se ejecuta con el aporte del arquitecto paisajista Pradial Gutiérrez y otros prestigiosos profesionales del país.
+
+<p>Esta institución, es también la responsable de mantener en perfectas condiciones más de 600 esculturas que hacen de Resistencia un gran museo al aire libre, orgullo de todos aquellos que tienen la oportunidad de conocerlo.
+
+<p>Con el compromiso de custodiar el patrimonio escultórico y afianzar la característica que distingue a "la Ciudad de las Esculturas" y convencidos de que el arte, además de un medio de elevación espiritual, debe ser un agente transformador de la realidad social y económica, la gestión de esta Fundación acumula en 25 años:
+
+<p>• 12 Concursos de Escultura al aire libre entre nacionales e internacionales,
+<p>• 8 Bienales Internacionales con la participación de 50 países y más de 100 escultores,
+<p>• más de 400 esculturas emplazadas en espacios públicos, incrementado el patrimonio de la ciudad a más de 600 obras y convirtiendo a Resistencia en el museo al aire libre más importante del mundo; posicionado ya como referencia internacional y destino de un creciente turístico cultural.
+<p>La Fundación Urunday ha logrado promover la Cultura mediante una de sus disciplinas, instalar los concursos al aire libre como espacio de intercambio sociocultural entre el artista y los distintos pueblos de nuestro país y del mundo, insertar a la Argentina en los circuitos internacionales de concursos de escultura en espacios públicos y transformar a Resistencia en un museo al aire libre de características únicas, con miras de ser reconocida como patrimonio cultural de la humanidad.
+
+<p>MISIÓN
+<p>Mejorar la realidad social y económica de nuestra provincia a través del ARTE como agente transformador.
+
+
+<p>VISIÓN
+<p>Hacer del ARTE un BIEN de todos.
+    </div>
+    
+    <div role="tabpanel" class="tab-pane" id="artistas">
+		<div class="row">
+		  <div class="col-sm-6 col-md-4">
+		    <div class="thumbnail">
+		      <img src="http://www.bienaldelchaco.org/actividades/img/concurso_portada_alemania.png" height="500" width="500"alt="...">
+		      <div class="caption">
+		        <h3>Nils Hansen</h3>
+		        <p>2015: Exhibición Colectiva Arte en Papel Amateras, en Sofía, Bulgaria. Artista de élite en el ZBrushCentral.
+				<p>2011: 1º Premio del Público en el 5to Simposio de Escultura en Piedra, Roldán, Argentina. Cortometraje Eclíptico. Mención de Honor en el Los Angeles Reel Film Festival. Selección Oficial en el Festival RMFF. Selección Oficial en el Sexto Festival de Proyección de Cortometrajes. Selección Oficial en el Festival de Cine Las Vegas. Selección Oficial para los Cortos de Wimbledon. Artista de Élite en el ZBrushCentral.
+				<p>2009-2013: Beca de estudio del Gobierno Alemán.
+				<p>2005-2008: Beca de trabajo Sesam, Italia, Unión Europea.
+				<p>2001-2003: Beca Weiterbildung, de la Cámara de Artesanos, Colonia.
+				<p>2003: 3º Mejor Aprendiz de Escultor, Alemania.</p>
+		        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+    </div>
+  </div>
+
+</div>
+<!-- Script Creado por mi-->
+<script>
+$('#myTabs a').click(function (e) {
+  e.preventDefault()
+  $(this).tab('show')
+})
+$('#myTabs a[href="#urunday"]').tab('show') // Select tab by name
+$('#myTabs a:first').tab('show') // Select first tab
+$('#myTabs a:last').tab('show') // Select last tab
+$('#myTabs li:eq(2) a').tab('show') // Select third tab (0-indexed)
+</script>
+
+    <!-- The javascript =============================== -->
+    <!-- Script de Material Lite-->
+    <!--<script defer src="https://code.getmdl.io/1.1.3/material.min.js"></script>-->
+    <!-- Script de Bootstrap-->
+    <script src="{{=URL('static','js/bootstrap.min.js')}}"></script>
+    <script src="{{=URL('static','js/web2py-bootstrap3.js')}}"></script>
+    {{block page_js}}{{end page_js}}
+    {{if response.google_analytics_id:}}
+    <!-- Analytics ==================================== -->
+    <script src="{{=URL('static','js/analytics.min.js')}}"></script>
+    <script type="text/javascript">
+      analytics.initialize({
+      'Google Analytics':{trackingId:'{{=response.google_analytics_id}}'}
+      });
+    </script>
+    {{pass}}
+    <!-- Share ============================y============ -->
+    <script src="{{=URL('static','js/share.js',vars=dict(static=URL('static','images')))}}"></script>
+  </body>
+</html>
