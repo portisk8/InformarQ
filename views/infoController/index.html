@@ -69,7 +69,7 @@
   		  <center><U><h3>Bienal internacional de Esculturas</h3></U></center>
         <hr>
         <img id="imagen-Logo-Bienal" src="{{=URL('static','images/bienal-logo.png')}}"align="right" hspace="10">
-  		  <div id="contenido-bienal" class="container"><font size ="12"face="arial" color="black"><p align="justify">La “Bienal Internacional de Esculturas” que se realiza desde 1988 en la ciudad de Resistencia, Argentina, es un concurso organizado por la Fundación Urunday y el Gobierno de la Provincia del Chaco. En cada edición, entre diez y quince artistas del ámbito regional, nacional e internacional son previamente seleccionados teniendo en cuenta su participación en éste u otros certámenes previos. Durante el plazo de una semana, deben realizar su obra al aire libre y a la vista de los visitantes. Al finalizar la semana, el sábado por la noche, se lleva a cabo una ceremonia de clausura, con su correspondiente entrega de premios. Al finalizar el concurso, las obras son expuestas durante 60 días. Luego de este tiempo, son repartidas en distintos puntos de la ciudad bajo el título de Patrimonio Cultural de la Ciudad de las Esculturas.
+  		  <div id="contenido-bienal" class="container"><font size ="10"face="arial" color="black"><p align="justify">La “Bienal Internacional de Esculturas” que se realiza desde 1988 en la ciudad de Resistencia, Argentina, es un concurso organizado por la Fundación Urunday y el Gobierno de la Provincia del Chaco. En cada edición, entre diez y quince artistas del ámbito regional, nacional e internacional son previamente seleccionados teniendo en cuenta su participación en éste u otros certámenes previos. Durante el plazo de una semana, deben realizar su obra al aire libre y a la vista de los visitantes. Al finalizar la semana, el sábado por la noche, se lleva a cabo una ceremonia de clausura, con su correspondiente entrega de premios. Al finalizar el concurso, las obras son expuestas durante 60 días. Luego de este tiempo, son repartidas en distintos puntos de la ciudad bajo el título de Patrimonio Cultural de la Ciudad de las Esculturas.
         <p align="justify">
         El concurso es el evento más importante que se lleva a cabo en Resistencia y esto se ve reflejado en los visitantes que reciben los escultores por día y los asistentes al acto de clausura. En los alrededores del área de trabajo se realizan distintas actividades culturales, como seminarios de arte, conciertos y espectáculos.
         <p align="justify">
@@ -82,11 +82,11 @@
   	</div>
 
   	<div role="tabpanel" class="tab-pane" id="urunday">
-      <div id="jumbotron-bienal" class="jumbotron">
+      <div class="jumbotron" id ="jumbotron-urunday">
        <center><U><h3>Fundacion Urunday</h3></U></center>
         <hr>
         <img id="imagen-Logo-Bienal" src="{{=URL('static','images/bienal-logo.png')}}"align="right" hspace="10">
-        <div id="contenido-bienal" class="container"><font size ="12"face="arial" color="black"><p align="justify">Resistencia se esculpe y de esta impronta volumétrica y policromada nace la <B>Fundación Urunday</B>, en noviembre de 1989. Una gestación que tiene como consigna permanente unir a los escultores de Argentina, de América y del mundo, de cobijarlos en su tierra, de desafiarlos a crear en cada nuevo concurso. Generando acontecimientos hasta entonces inéditos en el país, que se erguieron como inagotables proveedores de obras que enriquecen un patrimonio único.
+        <div id="contenido-bienal" class="container"><font size ="10"face="arial" color="black"><p align="justify">Resistencia se esculpe y de esta impronta volumétrica y policromada nace la <B>Fundación Urunday</B>, en noviembre de 1989. Una gestación que tiene como consigna permanente unir a los escultores de Argentina, de América y del mundo, de cobijarlos en su tierra, de desafiarlos a crear en cada nuevo concurso. Generando acontecimientos hasta entonces inéditos en el país, que se erguieron como inagotables proveedores de obras que enriquecen un patrimonio único.
         <p align="justify">
         Esta institución, es también la responsable de mantener en perfectas condiciones más de 600 esculturas que hacen de Resistencia un gran museo al aire libre, orgullo de todos aquellos que tienen la oportunidad de conocerlo.
         <p align="justify">
@@ -306,14 +306,13 @@
   </div>
 <!-- Script Creado por mi-->
 <script>
-$('#myTabs a').click(function (e) {
-  e.preventDefault()
-  $(this).tab('show')
-})
-$('#myTabs a[href="#urunday"]').tab('show') // Select tab by name
-$('#myTabs a:first').tab('show') // Select first tab
-$('#myTabs a:last').tab('show') // Select last tab
-$('#myTabs li:eq(2) a').tab('show') // Select third tab (0-indexed)
+  $('#myTabs a').click(function (e) {
+    e.preventDefault()
+    $(this).tab('show')
+  })
+  $('#myTabs a[href="#bienal"]').tab('show') // Select tab by name
+  $('#myTabs a[href="#urunday"]').tab('show') 
+  $('#myTabs a[href="#artistas"]').tab('show')
 </script>
 
     <!-- The javascript =============================== -->
