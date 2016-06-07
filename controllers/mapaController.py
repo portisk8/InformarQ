@@ -20,10 +20,10 @@ def getMarkers():
 			'lat': row.lat,
 			'lng': row.lon,
 			'title': row.name,
-			'infowindow': { 'content': "<h1>" + row.nombre +"</h1><p> Tel: "+ row.telefono +"</p><p>Direccion: "+row.direccion+"</p><p>"+row.descripcion+"</p>" }
-		}
+			'infowindow': { 'content': "<h1>" + row.nombre +"</h1><p> Tel: "+ row.telefono +"</p><p>Direccion: "+row.direccion+"</p><p>"+row.descripcion+"</p>" },
 			'pdf':row.pdf,
 			'tipo':row.tipo_Estable,
 			'nombre':row.nombre,
+		}
 		places.append(place)
 	return response.json(places)
