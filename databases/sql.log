@@ -53,3 +53,15 @@ CREATE TABLE auth_cas(
     renew CHAR(1)
 );
 success!
+timestamp: 2016-06-06T22:43:17.218000
+CREATE TABLE place(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    nombre TEXT,
+    tipo_Estable TEXT,
+    descripcion TEXT,
+    telefono TEXT,
+    pdf CHAR(512),
+    lat TEXT,
+    lon TEXT
+);
+success!
