@@ -130,3 +130,13 @@ auth.settings.reset_password_requires_verification = True
 # after defining tables, uncomment below to enable auditing
 # -------------------------------------------------------------------------
 # auth.enable_record_versioning(db)
+
+db.define_table('place',
+                Field('nombre', 'text', requires=IS_NOT_EMPTY()),
+                Field('tipo_Estable', 'text'),
+                Field('descripcion', 'text'),
+                Field('telefono','text'),
+                Field('pdf','upload'),
+                Field('lat', 'text'),
+                Field('lon', 'text'),
+                migrate='place.table')
