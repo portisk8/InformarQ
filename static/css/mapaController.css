@@ -1,0 +1,22 @@
+body {
+	/*background-repeat: no-repeat sirve para que la image no se repita(por defecto todas
+		las imagenes se ven dobles)*/
+	background-repeat: no-repeat;
+/*background-image:url() ... Propiedad que permite insertar una imagen de fondo*/
+	background-image:url("../images/Amazing-Space.jpg");
+/*background-size: define el tamaño en megapixel*/
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+ 	background-position:center;
+	background-size: cover;
+	height: 600px;
+	background-attachment: fixed;
+	
+}
+
+
+#boton1{
+	margin-top: 50px;
+
+}
