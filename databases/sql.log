@@ -593,3 +593,4 @@ CREATE TABLE mapa(
     direccion TEXT
 );
 success!
+success!
