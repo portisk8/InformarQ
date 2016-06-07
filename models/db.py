@@ -136,9 +136,9 @@ db.define_table('info',
 db.define_table('mapa',
                 Field('nombre', 'text', requires=IS_NOT_EMPTY()),
                 Field('descripcion', 'text'),
-                Field('direccion', 'text')
+                Field('direccion', 'text'),
                 Field('tel', 'text'),
                 Field('lat', 'text'),
                 Field('lng', 'text'),
-                Field('pdf', 'upload'),
+                Field('pdf', 'upload')
                )
