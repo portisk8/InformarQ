@@ -1,52 +1,56 @@
-body { 
-	background-image: url("../images/info-fondo.jpg"); 
-	background-repeat: repeat-y;
-	background-attachment: fixed;
-}
-
-#TitleNav{
+.infor a{
+	margin: 0 auto;
+	display: block;
+	padding: 0px;
+	margin: 10px;
 	text-align: center;
 }
 
-#navbar1{
-	background-color: white;
-	border-color: transparent;
-	margin-left: 2%;
-	margin-right: 2%;
+body {
+	background-image: url('../images/wall.jpg');
+	background-size: static;
+    background-repeat: none;
 }
 
-#buttonNavbar{
-	/*background-image: url("http://image005.flaticon.com/1/svg/124/124743.svg");
-	background-repeat: no-repeat;*/
-	background-color: transparent;
+.infor i.material-icons {
+	font-size: 1.9rem;
 }
 
-#button-Nav-Img{
-	width: 70px;
-	height: 70px;
-}
-#jumbotron-bienal{
-	margin-left: 2%;
-	margin-right: 2%;
+.infor a.waves-effect.waves-light.btn {
+    margin-bottom: -2%;
 }
 
-#bodyArtistas{
-	margin-left: 2%;
-	margin-right: 2%;
+
+.bottom-btn{
+	padding: 10px 15px !important;  
+	height: 56px;
 }
 
-#contenido-bienal{
-	margin-left: 2%;
+.fixed-btn-bottom{
+	margin-bottom: 30px;
 }
 
-#imagen-Logo-Bienal{
-	width: 25%;
+/* Google Material Icon Font 
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Material Icons'), local('MaterialIcons-Regular'), url('../static/fonts/material.woff2') format('woff2');
 }
 
-#btn-Urunday{
-	margin-left: 2%;
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
 }
-#jumbotron-urunday{
-	margin-left: 2%;
-	margin-right: 2%;
-}
+*/
