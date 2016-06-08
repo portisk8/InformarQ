@@ -28,10 +28,7 @@ if not request.env.web2py_runtime_gae:
     # ---------------------------------------------------------------------
     # if NOT running on Google App Engine use SQLite or other DB
     # ---------------------------------------------------------------------
-    db = DAL(myconf.get('db.uri'),
-             pool_size=myconf.get('db.pool_size'),
-             migrate_enabled=myconf.get('db.migrate'),
-             check_reserved=['all'])
+    db = DAL('sqlite://storage.sqlite', pool_size=0)
 else:
     # ---------------------------------------------------------------------
     # connect to Google BigTable (optional 'google:datastore://namespace')
@@ -132,16 +129,16 @@ auth.settings.reset_password_requires_verification = True
 # auth.enable_record_versioning(db)
 
 db.define_table('info',
-                Field('name', 'text', requires=IS_NOT_EMPTY()),
-                Field('file', 'upload')
+                Field('nombre', 'text', requires=IS_NOT_EMPTY()),
+                Field('archivo', 'upload')
                )
 
-db.define_table('place',
+db.define_table('mapa',
                 Field('nombre', 'text', requires=IS_NOT_EMPTY()),
                 Field('descripcion', 'text'),
+                Field('direccion', 'text'),
+                Field('tel', 'text'),
                 Field('lat', 'text'),
                 Field('lng', 'text'),
-                Field('pdf', 'upload'),
-                Field('tel', 'text'),
-                Field('direccion', 'text')
+                Field('pdf', 'upload')
                )

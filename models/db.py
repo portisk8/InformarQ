@@ -135,6 +135,7 @@ db.define_table('info',
 
 db.define_table('mapa',
                 Field('nombre', 'text', requires=IS_NOT_EMPTY()),
+                Field('tipo', 'text'),
                 Field('descripcion', 'text'),
                 Field('direccion', 'text'),
                 Field('tel', 'text'),
@@ -142,3 +143,4 @@ db.define_table('mapa',
                 Field('lng', 'text'),
                 Field('pdf', 'upload')
                )
+db.mapa.tipo.requires=IS_IN_SET(('Restaurante', 'Bar', 'Remiseria', 'Kiosco','Supermercado'))
