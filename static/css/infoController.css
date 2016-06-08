@@ -1,19 +1,19 @@
 .infor a{
-	margin: 0 auto;
-	display: block;
-	padding: 0px;
-	margin: 10px;
-	text-align: center;
+  margin: 0 auto;
+  display: block;
+  padding: 0px;
+  margin: 10px;
+  text-align: center;
 }
 
 body {
-	background-image: url('../images/wall.jpg');
-	background-size: static;
-    background-repeat: none;
+  background-image: url('../images/wall.jpg');
+  background-size: static;
+   background-repeat: none;
 }
 
 .infor i.material-icons {
-	font-size: 1.9rem;
+  font-size: 1.9rem;
 }
 
 .infor a.waves-effect.waves-light.btn {
@@ -22,12 +22,18 @@ body {
 
 
 .bottom-btn{
-	padding: 10px 15px !important;  
-	height: 56px;
+  padding: 10px 15px !important;  
+  height: 56px;
 }
 
 .fixed-btn-bottom{
-	margin-bottom: 30px;
+  margin-bottom: 30px;
+}
+
+video{
+  max-width: 100%;
+  height: auto;
+
 }
 
 /* Google Material Icon Font 
