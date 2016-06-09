@@ -1,0 +1,11 @@
+CSS:
+video{
+  max-width: 100%;
+  height: auto;
+
+}
+
+html:
+<video controls="controls" widht="400" height="300">
+  <source src="../static/video/Bienal2016.m4v" type="video/mp4">
+  <!-- <source src="Bienal2016.webm" type="video/webm"> -->
