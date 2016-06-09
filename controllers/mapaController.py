@@ -55,3 +55,29 @@ def getBares():
 		}
 		mapas.append(mapa)
 	return response.json(mapas)
+
+def getTransporte():
+	mapas = []
+	rows = db(db.mapa.tipo=='Transporte').select()
+	for row in rows:
+		mapa = {
+			'lat': row.lat,
+			'lng': row.lng,
+			'title': row.nombre,
+			'infoWindow': { 'content': "<h4>" + row.nombre +"</h4>"+ row.tel +"<p>Direccion: "+row.direccion+"</p><p>"+row.descripcion+"</p>" },
+		}
+		mapas.append(mapa)
+	return response.json(mapas)
+
+#Abajo la funcion para descargar PDF
+def download_pdf():
+	file_id = 2
+	import cStringIO 
+	import contenttype as c
+	s=cStringIO.StringIO() 
+	(filename,file) = db.info.archivo.retrieve(db.info[file_id].archivo)
+	s.write(file.read())  
+	response.headers['Content-Type'] = c.contenttype(filename)
+	response.headers['Content-Disposition'] = \
+	"attachment; filename=%s" % filename  
+	return s.getvalue()

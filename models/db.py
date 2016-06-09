@@ -143,4 +143,4 @@ db.define_table('mapa',
                 Field('lng', 'text'),
                 Field('pdf', 'upload')
                )
-db.mapa.tipo.requires=IS_IN_SET(('Restaurante', 'Bar', 'Remiseria', 'Kiosco','Supermercado'))
+db.mapa.tipo.requires=IS_IN_SET(('Restaurante', 'Bar', 'Kiosco','Transporte', 'Variado'))
