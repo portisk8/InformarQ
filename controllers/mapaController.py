@@ -6,18 +6,15 @@ def index():
 
 def getMarkers():
 	mapas = []
-	datos = []
 	rows = db(db.mapa.id>0).select()
 	for row in rows:
 		mapa = {
 			'lat': row.lat,
 			'lng': row.lng,
 			'title': row.nombre,
-			'infowindow': { 'content': "<h1>" + row.nombre +"</h1>"+ row.tel +"</p><p>Direccion: "+row.direccion+"</p><p>"+row.descripcion+"</p>" },
+			'infoWindow': { 'content': "<h1>" + row.nombre +"</h1>"+ row.tel +"<p>Direccion: "+row.direccion+"</p><p>"+row.descripcion+"</p>" },
 		}
-		dato = row.nombre
 		mapas.append(mapa)
-		datos.append(dato)
 	return response.json(mapas)
 
 def getRestaurantes():
@@ -28,7 +25,7 @@ def getRestaurantes():
 			'lat': row.lat,
 			'lng': row.lng,
 			'title': row.nombre,
-			'infowindow': { 'content': "<h1>" + row.nombre +"</h1>"+ row.tel +"</p><p>Direccion: "+row.direccion+"</p><p>"+row.descripcion+"</p>" },
+			'infoWindow': { 'content': "<h4>" + row.nombre +"</h4>"+ row.tel +"<p>Direccion: "+row.direccion+"</p><p>"+row.descripcion+"</p>" },
 		}
 		mapas.append(mapa)
 	return response.json(mapas)
@@ -41,7 +38,7 @@ def getKioscos():
 			'lat': row.lat,
 			'lng': row.lng,
 			'title': row.nombre,
-			'infowindow': { 'content': "<h1>" + row.nombre +"</h1>"+ row.tel +"</p><p>Direccion: "+row.direccion+"</p><p>"+row.descripcion+"</p>" },
+			'infoWindow': { 'content': '<h3>' + row.nombre +'</h3>'+ row.tel +'<p>Direccion: '+row.direccion+'</p><p>'+row.descripcion+'</p>' },
 		}
 		mapas.append(mapa)
 	return response.json(mapas)
@@ -54,7 +51,7 @@ def getBares():
 			'lat': row.lat,
 			'lng': row.lng,
 			'title': row.nombre,
-			'infowindow': { 'content': "<h1>" + row.nombre +"</h1>"+ row.tel +"</p><p>Direccion: "+row.direccion+"</p><p>"+row.descripcion+"</p>" },
+			'infoWindow': { 'content': "<h4>" + row.nombre +"</h4>"+ row.tel +"<p>Direccion: "+row.direccion+"</p><p>"+row.descripcion+"</p>" },
 		}
 		mapas.append(mapa)
 	return response.json(mapas)
