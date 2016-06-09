@@ -1,5 +1,5 @@
 function btn1Click(){
-	$("#cardImage").attr("src", "../static/images/urunday1.jpg");
+	$("#cardImage").attr("src", "../static/images/urunday.jpg");
 	$("#cardTitle").text('Fundación Urunday');
 	$("#cardWLink").attr("href", "http://www.fundacionurunday.org/");
 	$("#cardLink").text("+Info Fundación");
