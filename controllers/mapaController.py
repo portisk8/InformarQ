@@ -13,6 +13,7 @@ def getMarkers():
 			'lng': row.lng,
 			'title': row.nombre,
 			'infoWindow': { 'content': "<h1>" + row.nombre +"</h1>"+ row.tel +"<p>Direccion: "+row.direccion+"</p><p>"+row.descripcion+"</p>" },
+			'onclick':{},		
 		}
 		mapas.append(mapa)
 	return response.json(mapas)
@@ -39,6 +40,15 @@ def getKioscos():
 			'lng': row.lng,
 			'title': row.nombre,
 			'infoWindow': { 'content': '<h3>' + row.nombre +'</h3>'+ row.tel +'<p>Direccion: '+row.direccion+'</p><p>'+row.descripcion+'</p>' },
+			'onclick':{"map.drawRoute({ \
+									origin: [-27.438140, -58.980764],\
+									destination: ["+row.lat+","+row.lng+"],\
+									travelMode: 'driving',\
+									strokeColor: '#131540',\
+									strokeOpacity: 0.6,\
+									strokeWeight: 6\
+									});"
+					  },
 		}
 		mapas.append(mapa)
 	return response.json(mapas)
