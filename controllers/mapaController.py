@@ -12,8 +12,7 @@ def getMarkers():
 			'lat': row.lat,
 			'lng': row.lng,
 			'title': row.nombre,
-			'infoWindow': { 'content': "<h1>" + row.nombre +"</h1>"+ row.tel +"<p>Direccion: "+row.direccion+"</p><p>"+row.descripcion+"</p>" },
-			'onclick':{},		
+			'infoWindow': { 'content': "<h1>" + row.nombre +"</h1>"+ row.tel +"<p>Direccion: "+row.direccion+"</p><p>"+row.descripcion+"</p>" },	
 		}
 		mapas.append(mapa)
 	return response.json(mapas)
@@ -26,29 +25,22 @@ def getRestaurantes():
 			'lat': row.lat,
 			'lng': row.lng,
 			'title': row.nombre,
-			'infoWindow': { 'content': "<h4>" + row.nombre +"</h4>"+ row.tel +"<p>Direccion: "+row.direccion+"</p><p>"+row.descripcion+"</p>" },
+			'infoWindow': { 'content': "<h4>" + row.nombre +"</h4>"+ row.tel +"<p>Direccion: "+row.direccion+"</p><p>"+row.descripcion+"</p>"},
+			'icon':'../static/icons/icon_green32.png',
 		}
 		mapas.append(mapa)
 	return response.json(mapas)
 
-def getKioscos():
+def getServicio():
 	mapas = []
-	rows = db(db.mapa.tipo=='Kiosco').select()
+	rows = db(db.mapa.tipo=='Estacion de Servicio').select()
 	for row in rows:
 		mapa = {
 			'lat': row.lat,
 			'lng': row.lng,
 			'title': row.nombre,
 			'infoWindow': { 'content': '<h3>' + row.nombre +'</h3>'+ row.tel +'<p>Direccion: '+row.direccion+'</p><p>'+row.descripcion+'</p>' },
-			'onclick':{"map.drawRoute({ \
-									origin: [-27.438140, -58.980764],\
-									destination: ["+row.lat+","+row.lng+"],\
-									travelMode: 'driving',\
-									strokeColor: '#131540',\
-									strokeOpacity: 0.6,\
-									strokeWeight: 6\
-									});"
-					  },
+			'icon':'../static/icons/icon_pink32.png',
 		}
 		mapas.append(mapa)
 	return response.json(mapas)
@@ -62,6 +54,7 @@ def getBares():
 			'lng': row.lng,
 			'title': row.nombre,
 			'infoWindow': { 'content': "<h4>" + row.nombre +"</h4>"+ row.tel +"<p>Direccion: "+row.direccion+"</p><p>"+row.descripcion+"</p>" },
+			'icon':'../static/icons/icon_lightblue32.png',
 		}
 		mapas.append(mapa)
 	return response.json(mapas)

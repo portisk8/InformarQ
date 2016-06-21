@@ -13,7 +13,7 @@
     <div class="infor row card blue accent-2" >
      <div class="row">
         <div class="col s3">
-          <a id="kiosco" class="waves-effect waves-yellow btn bottom-btn card-panel black tooltipped" data-position="bottom" data-delay="50" data-tooltip="Kioscos"><i class="material-icons">local_parking</i></a>
+          <a id="servicio" class="waves-effect waves-yellow btn bottom-btn card-panel black tooltipped" data-position="bottom" data-delay="50" data-tooltip="Estacion de Servicio"><i class="material-icons">local_parking</i></a>
         </div>
         <div class="col s3">
           <a id="bar" class="btn waves-effect waves-yellow btn bottom-btn card-panel black tooltipped" data-position="bottom" data-delay="50" data-tooltip="Bares"><i class="material-icons">local_bar</i></a>
@@ -30,7 +30,8 @@
     <!--MAPA-->
     <div class="row">
       <div class="col s12">
-        <div class="container">
+        <div id="" class="container">
+           <canvas id="myCanvas" style="display:none; width: 100%;"></canvas>
           <div id="map"></div>
         </div>
       </div>
@@ -39,7 +40,7 @@
     <div class="infor row">
         <div class="col s6 ">
           <!--Boton de Descarga de mapa-->
-          <a href="{{=URL('static', 'construction.html')}}" class="waves-effect waves-yellow btn bottom-btn card-panel blue accent-2 tooltipped" data-position="bottom" data-delay="50" data-tooltip="Guardar Mapa"><i class="material-icons">map
+          <a href="{{=URL('static', 'construction.html')}}" onclick="" class="waves-effect waves-yellow btn bottom-btn card-panel blue accent-2 tooltipped" data-position="bottom" data-delay="50" data-tooltip="Guardar Mapa"><i class="material-icons">map
           </i></a>
         </div>
         <div class="col s6 ">
@@ -76,6 +77,21 @@
     });
       $.getJSON('{{=URL('mapaController','getBares')}}',
               function(data){
+                              var len=data.length;
+                              for(i=0; i< len ; i++){
+                                var lng = data[i].lng;
+                                var lat = data[i].lat;
+                                data[i].click= function(e) {
+                                                              map.drawRoute({
+                                                                            origin: [-27.438003, -58.980513],
+                                                                            destination: [lat, lng],
+                                                                            travelMode: 'walking',
+                                                                            strokeColor: '#131540',
+                                                                            strokeOpacity: 0.6,
+                                                                            strokeWeight: 6
+                                                            });
+                                                            };
+                              }
                               map.addMarkers(data);
                             }
       );
@@ -89,19 +105,58 @@
     });
       $.getJSON('{{=URL('mapaController','getRestaurantes')}}',
               function(data){
+                              map.addMarker({
+                                            lat: -27.438003,
+                                            lng: -58.980513,
+                                            title: 'Here!',
+                                            infoWindow: {
+                                                content: '<p>Contenido</p>'
+                                            }
+                                          });
+                              /*Esta funcion no anda*/
+                              var len= data.length;
+                              for(i=0; i< len ; i++){
+                                var lng = data[i].lng;
+                                var lat = data[i].lat;
+                                data[i].click= function(e) {
+                                                              map.drawRoute({
+                                                                            origin: [-27.438003, -58.980513],
+                                                                            destination: [lat, lng],
+                                                                            travelMode: 'driving',
+                                                                            strokeColor: '#131540',
+                                                                            strokeOpacity: 0.6,
+                                                                            strokeWeight: 6
+                                                            });
+                                                            };
+                              }
                               map.addMarkers(data);
                             }
       );
   });
-  /*Muestra Marcadores de Kioscos*/
-  $('#kiosco').click(function(){
+  /*Muestra Marcadores de Estaciones de Servicios*/
+  $('#servicio').click(function(){
     map = new GMaps({
       div: '#map',
       lat:-27.4374589 ,
       lng: -58.9829753
     });
-      $.getJSON('{{=URL('mapaController','getKioscos')}}',
+      $.getJSON('{{=URL('mapaController','getServicio')}}',
               function(data){
+                              var len=data.length;
+                              for(i=0; i< len ; i++){
+                                var lng = data[i].lng;
+                                var lat = data[i].lat;
+                                data[i].click= function(e) {
+                                                              map.drawRoute({
+                                                                            origin: [-27.438003, -58.980513],
+                                                                            destination: [lat, lng],
+                                                                            travelMode: 'driving',
+                                                                            strokeColor: '#131540',
+                                                                            strokeOpacity: 0.6,
+                                                                            strokeWeight: 6
+                                                            });
+                                                            };
+                              }
                               map.addMarkers(data);
                             }
       );
@@ -115,11 +170,54 @@
     });
       $.getJSON('{{=URL('mapaController','getTransporte')}}',
               function(data){
+                              var len=data.length;
+                              for(i=0; i< len ; i++){
+                                var lng = data[i].lng;
+                                var lat = data[i].lat;
+                                data[i].click= function(e) {
+                                                              map.drawRoute({
+                                                                            origin: [-27.438003, -58.980513],
+                                                                            destination: [lat, lng],
+                                                                            travelMode: 'driving',
+                                                                            strokeColor: '#131540',
+                                                                            strokeOpacity: 0.6,
+                                                                            strokeWeight: 6
+                                                            });
+                                                            };
+                              }
                               map.addMarkers(data);
                             }
       );
   });
 </script>
-  
+  <!--Este script es para hacer la captura de pantalla-->
+<script>
+      var canvas = document.getElementById('myCanvas');
+      var context = canvas.getContext('2d');
+
+      // draw cloud
+      context.beginPath();
+      context.moveTo(170, 80);
+      context.bezierCurveTo(130, 100, 130, 150, 230, 150);
+      context.bezierCurveTo(250, 180, 320, 180, 340, 150);
+      context.bezierCurveTo(420, 150, 420, 120, 390, 100);
+      context.bezierCurveTo(430, 40, 370, 30, 340, 50);
+      context.bezierCurveTo(320, 5, 250, 20, 250, 50);
+      context.bezierCurveTo(200, 5, 150, 20, 170, 80);
+      context.closePath();
+      context.lineWidth = 5;
+      context.fillStyle = '#8ED6FF';
+      context.fill();
+      context.strokeStyle = '#0000ff';
+      context.stroke();
+
+      // save canvas image as data url (png format by default)
+      var dataURL = canvas.toDataURL();
+
+      // set canvasImg image src to dataURL
+      // so it can be saved as an image
+      document.getElementById('canvasImg').src = dataURL;
+
+    </script>
   </body>
 </html>
