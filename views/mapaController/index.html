@@ -13,7 +13,6 @@
     <div class="infor row card blue accent-2" >
      <div class="row">
         <div class="col s3">
-          <!--LUCAS MARIPOSON! LUCAS MARIPOSON! LUCAS MARIPOSON!-->
           <a id="servicio" class="waves-effect waves-yellow btn bottom-btn card-panel black tooltipped" data-position="bottom" data-delay="50" data-tooltip="Estacion de Servicio"><i class="material-icons">ev_station </i></a>
         </div>
         <div class="col s3">
@@ -77,7 +76,43 @@
     });
       $.getJSON('{{=URL('mapaController','getBares')}}',
               function(data){
-                              map.addMarkers(data);
+                              map.addMarker({
+                                            lat: -27.438003,
+                                            lng: -58.980513,
+                                            title: 'Here!',
+                                            infoWindow: {
+                                                content: '<p>Contenido</p>'
+                                            }
+                                          });
+                              /*--------------*/
+                              var len = data.length;
+                              for(i=0; i< len ; i++){
+                              var lat = data[i].lat;
+                              var lng = data[i].lng;
+                              var title = data[i].title;
+                              var info = data[i].infoWindow;
+                              var ico = data[i].icon;
+                                  map.addMarker({
+                                    lat: lat,
+                                    lng: lng,
+                                    title:title,
+                                    infoWindow : info,
+                                    icon:ico,
+                                    click: function(e){
+                                      map.removePolylines();
+                                      /*alert(this.position);*/
+                                      map.drawRoute({
+                                        origin: [-27.438003, -58.980513],
+                                        destination: [this.position.lat(), this.position.lng()],
+                                        travelMode: 'driving',
+                                        strokeColor: '#3f62d7',
+                                        strokeOpacity: 0.6,
+                                        strokeWeight: 6
+                                      })
+                                    }
+                                  })
+                                
+                              }
                             }
       );
   });
@@ -90,7 +125,43 @@
     });
       $.getJSON('{{=URL('mapaController','getRestaurantes')}}',
               function(data){
-                              map.addMarkers(data);
+                              map.addMarker({
+                                            lat: -27.438003,
+                                            lng: -58.980513,
+                                            title: 'Here!',
+                                            infoWindow: {
+                                                content: '<p>Contenido</p>'
+                                            }
+                                          });
+                              /*--------------*/
+                              var len = data.length;
+                              for(i=0; i< len ; i++){
+                              var lat = data[i].lat;
+                              var lng = data[i].lng;
+                              var title = data[i].title;
+                              var info = data[i].infoWindow;
+                              var ico = data[i].icon;
+                                  map.addMarker({
+                                    lat: lat,
+                                    lng: lng,
+                                    title:title,
+                                    infoWindow : info,
+                                    icon:ico,
+                                    click: function(e){
+                                      map.removePolylines();
+                                      /*alert(this.position);*/
+                                      map.drawRoute({
+                                        origin: [-27.438003, -58.980513],
+                                        destination: [this.position.lat(), this.position.lng()],
+                                        travelMode: 'driving',
+                                        strokeColor: '#3f62d7',
+                                        strokeOpacity: 0.6,
+                                        strokeWeight: 6
+                                      })
+                                    }
+                                  })
+                                
+                              }
                             }
       );
   });
@@ -103,7 +174,43 @@
     });
       $.getJSON('{{=URL('mapaController','getServicio')}}',
               function(data){
-                              map.addMarkers(data);
+                              map.addMarker({
+                                            lat: -27.438003,
+                                            lng: -58.980513,
+                                            title: 'Here!',
+                                            infoWindow: {
+                                                content: '<p>Contenido</p>'
+                                            }
+                                          });
+                              /*--------------*/
+                              var len = data.length;
+                              for(i=0; i< len ; i++){
+                              var lat = data[i].lat;
+                              var lng = data[i].lng;
+                              var title = data[i].title;
+                              var info = data[i].infoWindow;
+                              var ico = data[i].icon;
+                                  map.addMarker({
+                                    lat: lat,
+                                    lng: lng,
+                                    title:title,
+                                    infoWindow : info,
+                                    icon:ico,
+                                    click: function(e){
+                                      map.removePolylines();
+                                      /*alert(this.position);*/
+                                      map.drawRoute({
+                                        origin: [-27.438003, -58.980513],
+                                        destination: [this.position.lat(), this.position.lng()],
+                                        travelMode: 'driving',
+                                        strokeColor: '#3f62d7',
+                                        strokeOpacity: 0.6,
+                                        strokeWeight: 6
+                                      })
+                                    }
+                                  })
+                                
+                              }
                             }
       );
   });
@@ -116,7 +223,43 @@
     });
       $.getJSON('{{=URL('mapaController','getTransporte')}}',
               function(data){
-                              map.addMarkers(data);
+                              map.addMarker({
+                                            lat: -27.438003,
+                                            lng: -58.980513,
+                                            title: 'Here!',
+                                            infoWindow: {
+                                                content: '<p>Contenido</p>'
+                                            }
+                                          });
+                              /*--------------*/
+                              var len = data.length;
+                              for(i=0; i< len ; i++){
+                              var lat = data[i].lat;
+                              var lng = data[i].lng;
+                              var title = data[i].title;
+                              var info = data[i].infoWindow;
+                              var ico = data[i].icon;
+                                  map.addMarker({
+                                    lat: lat,
+                                    lng: lng,
+                                    title:title,
+                                    infoWindow : info,
+                                    icon:ico,
+                                    click: function(e){
+                                      map.removePolylines();
+                                      /*alert(this.position);*/
+                                      map.drawRoute({
+                                        origin: [-27.438003, -58.980513],
+                                        destination: [this.position.lat(), this.position.lng()],
+                                        travelMode: 'driving',
+                                        strokeColor: '#3f62d7',
+                                        strokeOpacity: 0.6,
+                                        strokeWeight: 6
+                                      })
+                                    }
+                                  })
+                                
+                              }
                             }
       );
   });
