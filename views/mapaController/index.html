@@ -64,7 +64,30 @@
       lat:-27.4374589 ,
       lng: -58.9829753
     });
-    
+        /*------Style Gmap-------*/
+      var styles = [
+  {
+    featureType: "all",
+    stylers: [
+      { saturation: -80 }
+    ]
+  },{
+    featureType: "road.arterial",
+    elementType: "geometry",
+    stylers: [
+      { hue: "#00ffee" },
+      { saturation: 50 }
+    ]
+  },{
+    featureType: "poi.business",
+    elementType: "labels",
+    stylers: [
+      { visibility: "off" }
+    ]
+  }
+];
+map.setOptions({styles: styles});
+/*-------------*/
 
   });
 /*Muestra Marcadores de Bares*/
@@ -74,6 +97,30 @@
       lat:-27.4374589 ,
       lng: -58.9829753
     });
+        /*------Style Gmap-------*/
+      var styles = [
+  {
+    featureType: "all",
+    stylers: [
+      { saturation: -80 }
+    ]
+  },{
+    featureType: "road.arterial",
+    elementType: "geometry",
+    stylers: [
+      { hue: "#00ffee" },
+      { saturation: 50 }
+    ]
+  },{
+    featureType: "poi.business",
+    elementType: "labels",
+    stylers: [
+      { visibility: "off" }
+    ]
+  }
+];
+map.setOptions({styles: styles});
+/*-------------*/
       $.getJSON('{{=URL('mapaController','getBares')}}',
               function(data){
                               map.addMarker({
@@ -123,6 +170,30 @@
       lat:-27.4374589 ,
       lng: -58.9829753
     });
+    /*------Style Gmap-------*/
+      var styles = [
+  {
+    featureType: "all",
+    stylers: [
+      { saturation: -80 }
+    ]
+  },{
+    featureType: "road.arterial",
+    elementType: "geometry",
+    stylers: [
+      { hue: "#00ffee" },
+      { saturation: 50 }
+    ]
+  },{
+    featureType: "poi.business",
+    elementType: "labels",
+    stylers: [
+      { visibility: "off" }
+    ]
+  }
+];
+map.setOptions({styles: styles});
+/*-------------*/
       $.getJSON('{{=URL('mapaController','getRestaurantes')}}',
               function(data){
                               map.addMarker({
@@ -164,6 +235,7 @@
                               }
                             }
       );
+
   });
   /*Muestra Marcadores de Estaciones de Servicios*/
   $('#servicio').click(function(){
@@ -172,6 +244,30 @@
       lat:-27.4374589 ,
       lng: -58.9829753
     });
+        /*------Style Gmap-------*/
+      var styles = [
+  {
+    featureType: "all",
+    stylers: [
+      { saturation: -80 }
+    ]
+  },{
+    featureType: "road.arterial",
+    elementType: "geometry",
+    stylers: [
+      { hue: "#00ffee" },
+      { saturation: 50 }
+    ]
+  },{
+    featureType: "poi.business",
+    elementType: "labels",
+    stylers: [
+      { visibility: "off" }
+    ]
+  }
+];
+map.setOptions({styles: styles});
+/*-------------*/
       $.getJSON('{{=URL('mapaController','getServicio')}}',
               function(data){
                               map.addMarker({
@@ -221,6 +317,30 @@
       lat:-27.4374589 ,
       lng: -58.9829753
     });
+        /*------Style Gmap-------*/
+      var styles = [
+  {
+    featureType: "all",
+    stylers: [
+      { saturation: -80 }
+    ]
+  },{
+    featureType: "road.arterial",
+    elementType: "geometry",
+    stylers: [
+      { hue: "#00ffee" },
+      { saturation: 50 }
+    ]
+  },{
+    featureType: "poi.business",
+    elementType: "labels",
+    stylers: [
+      { visibility: "off" }
+    ]
+  }
+];
+map.setOptions({styles: styles});
+/*-------------*/
       $.getJSON('{{=URL('mapaController','getTransporte')}}',
               function(data){
                               map.addMarker({
