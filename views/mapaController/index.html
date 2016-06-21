@@ -13,7 +13,8 @@
     <div class="infor row card blue accent-2" >
      <div class="row">
         <div class="col s3">
-          <a id="kiosco" class="waves-effect waves-yellow btn bottom-btn card-panel black tooltipped" data-position="bottom" data-delay="50" data-tooltip="Kioscos"><i class="material-icons">ev_station </i></a>
+          <!--LUCAS MARIPOSON! LUCAS MARIPOSON! LUCAS MARIPOSON!-->
+          <a id="servicio" class="waves-effect waves-yellow btn bottom-btn card-panel black tooltipped" data-position="bottom" data-delay="50" data-tooltip="Estacion de Servicio"><i class="material-icons">ev_station </i></a>
         </div>
         <div class="col s3">
           <a id="bar" class="btn waves-effect waves-yellow btn bottom-btn card-panel black tooltipped" data-position="bottom" data-delay="50" data-tooltip="Bares"><i class="material-icons">local_bar</i></a>
@@ -93,20 +94,20 @@
                             }
       );
   });
-  /*Muestra Marcadores de Kioscos*/
-  $('#kiosco').click(function(){
+  /*Muestra Marcadores de Estaciones de Servicios*/
+  $('#servicio').click(function(){
     map = new GMaps({
       div: '#map',
       lat:-27.4374589 ,
       lng: -58.9829753
     });
-      $.getJSON('{{=URL('mapaController','getKioscos')}}',
+      $.getJSON('{{=URL('mapaController','getServicio')}}',
               function(data){
                               map.addMarkers(data);
                             }
       );
   });
-  /*Muestra Marcadores de Kioscos*/
+  /*Muestra Marcadores de Transporte*/
   $('#transporte').click(function(){
     map = new GMaps({
       div: '#map',
