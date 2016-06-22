@@ -4,7 +4,7 @@ def index():
 
 #Descargar ArchivoSSSSS!!!!
 def download_pdf():
-	file_id = 1
+	file_id = 2
 	import cStringIO 
 	import contenttype as c
 	s=cStringIO.StringIO() 
