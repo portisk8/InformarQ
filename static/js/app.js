@@ -21,10 +21,10 @@ function btn2Click(){
 }
 
 function btn3Click(){
-	$("#cardImage").attr("src", "../static/images/escultores.png");
-	$("#cardTitle").text("Actividades Paralelas Escultoricas");
-	$("#cardWLink").attr("href", "http://www.bienaldelchaco.org/escultoricas/");
-	$("#cardLink").text("+Info Escultores Paralelos");
-	$("#cardHtml").html('El arte, permite expresar una vision sensible acerca del mundo, sea imaginario o real; nunca quieto, siempre cambiante, recomenzando de una forma dinamica con distintas tecnicas y materiales; catartico de su tiempo. En paralelo al Certamen Internacional, corre el Encuentro de Escultores Paralelos que, convoca a 9 artistas de Argentina y Latinoamerica quienes a diferencia de sus pares, poseen una amplia libertad de tecnicas y materiales. Los artistas paralelos se destacan a la hora de trabajar en tres categorias: Arte Reciclado, Arte y Naturaleza y Arte con Ceramica.');
-	$("#cardContent").text("Escultores Argentinos y Latinoamericanos se destacan en distintas areas con amplia libertad de tecnicas y materiales");
+	$("#cardImage").attr("src", "../static/images/bienal22014.jpg");
+	$("#cardTitle").text("Bienal 2014");
+	$("#cardWLink").attr("href", "http://www.bienaldelchaco.org/bienal2014/");
+	$("#cardLink").text("+Info Bienal 2014");
+	$("#cardHtml").html('Diez artistas consagrados, representando a sus paises originarios, compitieron realizando una obra original e inedita inspirandose en "Homus Novus". Este concepto se refiere a una humanidad renovada, que haga de la alegria y de la buena voluntad sus señas de identidad, que enfrente con optimismo y confianza su futuro. El material a trabajar fue acero inoxidable, utilizado por primera vez en la competencia. Los escultores que participaron fueron: Robert Kogel(Alemania), Raul Oscar Gomez (Argentina), Jose Baier (Austria), Thierry Ferreira (Francia), Kei Nakamura(Japon), Piotr Twardowski (Polonia), Hugo Maciel (Portugal), Rubio Harak (Puerto Rico), Gleb Tkachenko (Rusia), Ilker Yardimici (Turquia), Raul Zorrilla Soto-Percy (Peru).');
+	$("#cardContent").text("Es el hombre nuevo, renacido, enfrentando la vida con una vista sensible.");
 }

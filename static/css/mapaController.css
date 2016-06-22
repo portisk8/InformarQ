@@ -7,7 +7,7 @@
 }
 
 body {
-  background-image: url("../images/wall.jpg");
+  background-image: url("../images/mapimg.jpg");
     background-repeat: no-repeat;
   ­webkit­background­size:cover;
   ­moz­background­size:cover;
@@ -22,6 +22,7 @@ body {
 
 .infor a.waves-effect.waves-yellow.btn {
     margin-bottom: -2%;
+  
 }
 
 
