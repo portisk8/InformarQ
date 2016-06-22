@@ -4,6 +4,9 @@ def index():
 	mapas = db().select(db.mapa.ALL)
 	return dict(mapa=mapas)
 
+def plano():
+	return dict()
+
 def getMarkers():
 	mapas = []
 	rows = db(db.mapa.id>0).select()

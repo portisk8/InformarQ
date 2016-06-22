@@ -13,7 +13,8 @@ $(document).ready(function() {
         {
           title: 'Business Lunch',
           start: '2016-05-03T13:00:00',
-          constraint: 'businessHours'
+          constraint: 'businessHours',
+          url: 'http://google.com/'
         },
         {
           title: 'Meeting',
@@ -60,7 +61,13 @@ $(document).ready(function() {
           rendering: 'background',
           color: '#ff9f89'
         }
-      ]
+      ],
+      eventClick: function(event) {
+        if (event.url) {
+            window.open(event.url);
+            return false;
+        }
+    }
     });
     
   });
