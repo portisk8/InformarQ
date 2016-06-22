@@ -9,7 +9,7 @@
 body {
   background-image: url('../images/wall.jpg');
   background-size: static;
-   background-repeat: none;
+  background-repeat: none;
 }
 
 .infor i.material-icons {

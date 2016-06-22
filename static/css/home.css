@@ -1,6 +1,6 @@
 body {
-	background-image: url('../images/GhGOhYo.png');
-	background-size: auto;
+	background-image: url('../images/Wallpaper-iQ2.png');
+	background-size: 1950px;
     background-repeat: none;
  }
 
@@ -21,6 +21,6 @@ body {
 
 #logoApp{
 	margin-top: 5%;
-	width: 100%;
+	width: 85%;
 	z-index: 0;
 }
