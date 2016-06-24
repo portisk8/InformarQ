@@ -1,5 +1,5 @@
 body {
-	background-image: url('../images/Wallpaper-iQ2.png');
+	background-image: url('../images/../images/wall.jpg');
 	background-size: 1850px;
     background-repeat: none;
  }
@@ -14,13 +14,30 @@ body {
   color: white;
 }
 
-#centerButton{
-	z-index: 1;
-	background-color: #26a69a; 
+.infor i.material-icons {
+  font-size: 1.9rem;
 }
 
-#logoApp{
-	margin-top: 5%;
-	width: 85%;
-	z-index: 0;
+.infor a.waves-effect.waves-yellow.btn {
+    margin-bottom: -2%;
+  
+}
+
+.bottom-btn{
+  padding: 10px 15px !important;  
+  height: 56px;
+  margin-top: 40%;
+}
+
+.fixed-btn-bottom{
+  margin-bottom: 50px;
+  }
+
+#plano{
+    margin-top: 5%;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 40%;
+
 }
