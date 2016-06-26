@@ -43,6 +43,25 @@ body {
     height: 70%;
 }
 
+.goocalendario{
+    width: 100%; 
+    height: 500px;    
+}
+
+.contenido.cronograma{
+    padding: 20px 10px; 
+}
+
+.collapsible-header {
+    border: none;
+    background-color: rgba(21, 49, 53, 0.31);
+    color: white;
+}
+.collapsible-body{
+  border: none;
+  color: white;
+}
+
 /* Google Material Icon Font 
 @font-face {
   font-family: 'Material Icons';

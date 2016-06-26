@@ -1,33 +1,81 @@
+<!DOCTYPE html>
 <html>
-<head>
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<script src="../static/js/jquery.js"></script>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="../static/js/jquery.js"></script>
     <script src="../static/js/materialize.min.js"></script>
-    <script src="../static/js/menubotton.js"></script>
-	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-	<link rel="stylesheet" href="{{=URL('static','css/materialize.min.css')}}">
-	<link rel="stylesheet" href="{{=URL('static','css/home.css')}}">
-</head>
+    <script src="../static/js/defmenu.js"></script>
+    <link rel="stylesheet" href="../static/css/materialize.min.css">
+    <link rel="stylesheet" href="../static/css/defmenu.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  </head>
+
+
 <body>
-	 <div id="menubot"; class="fixed-action-btn horizontal click-to-toggle"onclick="btn4Click()" style="top: -5px; left: 30px;">
-	    <a class="btn-floating btn-large red">
-	      <i class="material-icons">menu</i>
-	    </a>
-	    <ul>
-	      <li><a class="btn-floating red"><i class="material-icons">insert_chart</i></a></li>
-	      <li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a></li>
-	      <li><a class="btn-floating green"><i class="material-icons">publish</i></a></li>
-	      <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
-	    </ul>
-	  </div>
+  
+<nav>
+	<div class="nav-wrapper cyan darken-3">
+	  <a href="#!" class="brand-logo">InformarQ</a>
+	  <ul class="right hide-on-med-and-down">
+	    <li><a href="sass.html"><i class="material-icons">contact_mail</i></a></li>
+	    <li><a href="badges.html"><i class="material-icons">link</i></a></li>
+	    <li><a href="collapsible.html"><i class="material-icons">share</i></a></li>
+	    <li><a href="mobile.html"><i class="material-icons">more_vert</i></a></li>
+	  </ul>
+	</div>
+</nav>  
+
+<main>
+<div class="container">
+	<div class="row panorama">
+		<div class="col s6 m4">
+			<a href="#" class="link card waves-effect waves-light panorama image1">
+			</a>
+		</div>
+		<div class="col s6 m8">
+			<a href="#" class="link card waves-effect waves-light panorama image2"></a>
+		</div>
+		<div class="col s6 m8">
+			<a href="#" class="link card waves-effect waves-light panorama image3"></a>
+		</div>
+		<div class="col s6 m4">
+			<a href="#" class="link card waves-effect waves-light panorama image4"></a>
+		</div>
+		<div class="col s6 m4">
+			<a href="#" class="link card waves-effect waves-light panorama image5"></a>
+		</div>
+		<div class="col s6 m8">
+			<a href="#" class="link card waves-effect waves-light panorama image6"></a>
+		</div>
 
 	</div>
-  <center><img id ="logoApp" src="../static/images/Logo-png-InfQ-Remake.png"></center>
-  
+</div>
+</main>
 
-  <!-- SCAN BUTTON -->
-  <center><a class="waves-effect waves-light btn-large">Button</a></center>
-	<script defer src="https://code.getmdl.io/1.1.3/material.min.js"></script>
+<footer class="page-footer cyan darken-3">
+
+<div class="container">
+	<div class="row">
+	  <div class="col l6 s12">
+	    <h5 class="white-text">Footer Content</h5>
+	    <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+	  </div>
+	  <div class="col l4 offset-l2 s12">
+	    <h5 class="white-text">Links</h5>
+	    <ul>
+	      <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+	    </ul>
+	  </div>
+	</div>
+</div>
+<div class="footer-copyright">
+	<div class="container">
+	© 2014 Copyright Text
+	<a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+	</div>
+</div>
+
+</footer>
 </body>
 </html>
