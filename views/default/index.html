@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../static/css/materialize.min.css">
     <link rel="stylesheet" href="../static/css/defmenu.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>InformarQ</title>
   </head>
 
 
@@ -16,7 +17,7 @@
   
 <nav>
 	<div class="nav-wrapper cyan darken-3">
-	  <a href="#!" class="brand-logo">InformarQ</a>
+	  <a href="#!" class="brand-logo"><img id="logo" src="../static/images/logoApp.png"></a>
 	  <ul class="right hide-on-med-and-down">
 	    <li><a href="sass.html"><i class="material-icons">contact_mail</i></a></li>
 	    <li><a href="badges.html"><i class="material-icons">link</i></a></li>
@@ -30,20 +31,20 @@
 <div class="container">
 	<div class="row panorama">
 		<div class="col s6 m4">
-			<a href="#" class="link card waves-effect waves-light panorama image1">
+			<a href="{{=URL('infoController','index')}}" class="link card waves-effect waves-light panorama image1">
 			</a>
 		</div>
 		<div class="col s6 m8">
 			<a href="#" class="link card waves-effect waves-light panorama image2"></a>
 		</div>
 		<div class="col s6 m8">
-			<a href="#" class="link card waves-effect waves-light panorama image3"></a>
+			<a href="{{=URL('cronoController','index')}}" class="link card waves-effect waves-light panorama image3"></a>
 		</div>
 		<div class="col s6 m4">
-			<a href="#" class="link card waves-effect waves-light panorama image4"></a>
+			<a href="{{=URL('mapaController','index')}}" class="link card waves-effect waves-light panorama image4"></a>
 		</div>
 		<div class="col s6 m4">
-			<a href="#" class="link card waves-effect waves-light panorama image5"></a>
+			<a href="{{=URL('mapaController', 'plano')}}" class="link card waves-effect waves-light panorama image5"></a>
 		</div>
 		<div class="col s6 m8">
 			<a href="#" class="link card waves-effect waves-light panorama image6"></a>

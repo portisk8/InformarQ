@@ -27,14 +27,12 @@ body {
   left: 50px;
   }
 
-#logoApp{
-	margin-top: 5%;
-	width: 85%;
-	z-index: 0;
-}
-
 #menubot{
   height: 100px;
   margin-top: 3%;
   left:50px;
+}
+#logo{
+  width: 3%;
+  z-index: 1;
 }

@@ -18,6 +18,11 @@ main {
   flex: 1 0 auto;
 }
 
+#logo{
+	width: 40%;
+	margin: 1%;
+}
+
 .panorama .link{
 	height: 200px;
 	display: block;
