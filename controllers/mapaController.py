@@ -76,8 +76,8 @@ def getTransporte():
 	return response.json(mapas)
 
 #Abajo la funcion para descargar PDF
-def download_pdf():
-	file_id = 2
+def downloadPlano():
+	file_id = 4
 	import cStringIO 
 	import contenttype as c
 	s=cStringIO.StringIO() 

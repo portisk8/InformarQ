@@ -64,6 +64,14 @@
       lat:-27.4374589 ,
       lng: -58.9829753
     });
+    map.addMarker({
+                                            lat: -27.438003,
+                                            lng: -58.980513,
+                                            title: 'Bienal 2016!',
+                                            infoWindow: {
+                                                content: '<p>Usted está aqui.</p><p>Haga click en el boton para ver el marcador que desee.'
+                                            }
+                                          });
         /*------Style Gmap-------*/
       var styles = [
   {
@@ -126,9 +134,9 @@ map.setOptions({styles: styles});
                               map.addMarker({
                                             lat: -27.438003,
                                             lng: -58.980513,
-                                            title: 'Here!',
+                                            title: 'Bienal 2016',
                                             infoWindow: {
-                                                content: '<p>Contenido</p>'
+                                                content: '<p>Usted esta Aqui</p>'
                                             }
                                           });
                               /*--------------*/
@@ -199,9 +207,9 @@ map.setOptions({styles: styles});
                               map.addMarker({
                                             lat: -27.438003,
                                             lng: -58.980513,
-                                            title: 'Here!',
+                                            title: 'Bienal 2016',
                                             infoWindow: {
-                                                content: '<p>Contenido</p>'
+                                                content: '<p>Usted está aqui.</p>'
                                             }
                                           });
                               /*--------------*/
@@ -273,9 +281,9 @@ map.setOptions({styles: styles});
                               map.addMarker({
                                             lat: -27.438003,
                                             lng: -58.980513,
-                                            title: 'Here!',
+                                            title: 'Bienal 2016!',
                                             infoWindow: {
-                                                content: '<p>Contenido</p>'
+                                                content: '<p>Usted está aqui.</p>'
                                             }
                                           });
                               /*--------------*/
@@ -346,9 +354,9 @@ map.setOptions({styles: styles});
                               map.addMarker({
                                             lat: -27.438003,
                                             lng: -58.980513,
-                                            title: 'Here!',
+                                            title: 'Bienal 2016!',
                                             infoWindow: {
-                                                content: '<p>Contenido</p>'
+                                                content: '<p>Usted está aqui.</p>'
                                             }
                                           });
                               /*--------------*/
@@ -371,7 +379,7 @@ map.setOptions({styles: styles});
                                       map.drawRoute({
                                         origin: [-27.438003, -58.980513],
                                         destination: [this.position.lat(), this.position.lng()],
-                                        travelMode: 'driving',
+                                        travelMode: 'walking',
                                         strokeColor: '#3f62d7',
                                         strokeOpacity: 0.6,
                                         strokeWeight: 6
