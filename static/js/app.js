@@ -21,7 +21,7 @@ function btn2Click(){
 }
 
 function btn3Click(){
-	$("#cardImage").attr("src", "../static/images/bienal22014.jpg");
+	$("#cardImage").attr("src", "../static/images/fondomodif.jpg");
 	$("#cardTitle").text("Bienal 2014");
 	$("#cardWLink").attr("href", "http://www.bienaldelchaco.org/bienal2014/");
 	$("#cardLink").text("+Info Bienal 2014");
