@@ -66,10 +66,18 @@ main {
 }
 
 #logo1{
-	width: 30%;
-	margin: 1%;
+	width: 35%;
+	margin: 0%;
+	padding-top: 4%;
+
 }
 
 #foter{
 	background-color: #00838f;
+
+}
+
+#contact{
+	padding-top: 1%;
+
 }

@@ -5,35 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="../static/js/jquery.js"></script>
     <script src="../static/js/materialize.min.js"></script>
-    <script src="../static/js/app3.js"></script>
+    <script src="../static/js/acercade.js"></script>
     <link rel="stylesheet" href="../static/css/materialize.min.css">
     <link rel="stylesheet" href="../static/css/acercade.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   </head>
-  <body class="container">    
+  <body>    
 
-    <div class="card hoverable">
-      <div class="card-image waves-effect waves-block waves-light">
-        <img id="cardImage" class="activator" src="../static/images/inlogo6.png">
-      </div>
-      <div class="card-content">
-        <span class="card-title activator grey-text text-darken-4"><strong id="cardTitle">APP Amigas</strong><i class="material-icons right">more_vert</i></span>
-        <p id="cardContent"></p>
-        <p><br></p>
-        <div class="card-action">
-              <a id="cardWLink" href="#"><span id="cardLink">+Apps</span></a>
-        </div>
-      </div>
-      <div class="card-reveal cyan lighten-5">
-        <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i></span>
-        <p><br></p>
-        <div id="cardHtml"><center><h4>APLICACIONES AMIGAS</h4></center><p>Las aplicaciones que encontraras en esta sección son creadas por friends developers son mas feas que esta pero todo bien igual
-        ATTE:Pelich .</p>
-        </div>
+  <div id="scroll-animate">
+    <div id="scroll-animate-main">
+      <div class="wrapper-parallax">
+        <header>
+          <h1>Header</h1>
+        </header>
+
+        <section class="content">
+          <h1>Content</h1>
+              <a href="{{=URL('default','index')}}" class="btn-floating btn-large waves-effect waves-light right red fixed-btn-bottom tooltipped" data-position="left" data-delay="50" data-tooltip="Home"><i class="material-icons">home</i></a>
+        </section>
+
+        <footer>
+          <h1>Footer</h1>
+        </footer>
       </div>
     </div>
-    
-    <a href="{{=URL('default','index')}}" class="btn-floating btn-large waves-effect waves-light right red fixed-btn-bottom tooltipped" data-position="left" data-delay="50" data-tooltip="Home"><i class="material-icons">home</i></a>
+  </div>
+  <!-- https://codepen.io/hudsonmarinho/pen/FHGeK toda la merca-->
 
 </body>
 </html>
