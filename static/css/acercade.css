@@ -2,7 +2,7 @@
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic);
 
 html {
-  background: #233c38 url('../images/scrollfondo.jpg') 50% 50%;
+  background: #233c38 url('../images/fondoparallax.jpg') 50% 50%;
   background-attachment: fixed;
   background-size: cover;
   font-family: sans-serif;
