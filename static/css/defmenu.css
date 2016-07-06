@@ -19,7 +19,7 @@ main {
 }
 
 #logo{
-	width: 40%;
+	width: 200px;
 	margin: 1%;
 }
 
@@ -80,4 +80,12 @@ main {
 #contact{
 	padding-top: 1%;
 
+}
+
+.rightBtns{
+    float:right;
+}
+
+#btnIcon{
+    margin-left: 10px;
 }

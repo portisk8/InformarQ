@@ -49,14 +49,19 @@
     </div>
     
     <div class="infor row">
-      <div class="col s4 offset-s4 m2 offset-m5">
+      <!--WEB-->
         <a href="{{=URL('download_pdf')}}" class="waves-effect waves-light btn col s12 bottom-btn tooltipped animated bounceIn" data-position="bottom" data-delay="50" data-tooltip="Descarga Información"><i class="material-icons">picture_as_pdf</i></a>
-      </div>
+        <!--Mobile-->
+        <a href="javascript:openUrl()" class="waves-effect waves-light btn col s12 bottom-btn tooltipped animated bounceIn" data-position="bottom" data-delay="50" data-tooltip="Descarga Información"><i class="material-icons">picture_as_pdf</i></a>
     </div>
 
      <a href="{{=URL('default','index')}}" class="btn-floating btn-large waves-effect waves-light right red fixed-btn-bottom"><i class="material-icons">home</i></a>
    
-     </div>
-
+    </div>
+    <script >
+    function openUrl(){
+      window.open("http://192.168.2.27:8000/InformarQ/infoController/download_pdf", '_system', 'location=no,zoom=no,toolbar=no, fullscreen=true, enableViewportScale=true');
+    }
+    </script>
 </body>
 </html>
