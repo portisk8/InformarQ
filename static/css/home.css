@@ -4,23 +4,36 @@ body {
     background-repeat: none;
  }
 
-..demo-layout-transparent {
-  background: url('../assets/demos/transparent.jpg') center / cover;
-}
-.demo-layout-transparent .mdl-layout__header,
-.demo-layout-transparent .mdl-layout__drawer-button {
-  /* This background is dark, so we set text to white. Use 87% black instead if
-     your background is light. */
-  color: white;
+.infor i.material-icons {
+  font-size: 1.9rem;
 }
 
-#centerButton{
-	z-index: 1;
-	background-color: #26a69a; 
+.infor a.waves-effect.waves-yellow.btn {
+    margin-bottom: -2%;
+  
 }
 
-#logoApp{
-	margin-top: 5%;
-	width: 85%;
-	z-index: 0;
+.bottom-btn{
+  padding: 10px 15px !important;  
+  height: 56px;
+  margin-top: 40%;
 }
+
+.fixed-btn-bottom{
+  margin-bottom: 50px;
+  }
+
+.fixed-action-btn{
+  left: 50px;
+  }
+
+#menubot{
+  height: 100px;
+  margin-top: 3%;
+  left:50px;
+}
+#logo{
+  width: 3%;
+  z-index: 1;
+}
+
