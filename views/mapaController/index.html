@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="{{=URL('static','css/materialize.min.css')}}">
     <link rel="stylesheet" href="{{=URL('static','css/mapaController.css')}}">
     <link rel="stylesheet" href="{{=URL('static','css/animate.css')}}">
+    <link href="../static/css/hover-min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="{{=URL('static','images/favicon.ico')}}" type="image/x-icon">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" media="all">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Mapa Ubicaciones 2016</title>
   </head>
@@ -15,16 +18,16 @@
     <div class="infor row card cyan lighten-5 animated zoomInDown" >
      <div class="row">
         <div class="col s3">
-          <a id="servicio" class="waves-effect waves-light btn bottom-btn tooltipped" data-position="bottom" data-delay="50" data-tooltip="Estacion de Servicio"><i class="material-icons">ev_station </i></a>
+          <a id="servicio" class="waves-effect waves-light btn bottom-btn tooltipped hvr-wobble-skew" data-position="bottom" data-delay="50" data-tooltip="Estacion de Servicio"><i class="material-icons">ev_station </i></a>
         </div>
         <div class="col s3">
-          <a id="bar" class="btn waves-effect waves-light btn bottom-btn tooltipped" data-position="bottom" data-delay="50" data-tooltip="Bares"><i class="material-icons">local_bar</i></a>
+          <a id="bar" class="btn waves-effect waves-light btn bottom-btn tooltipped hvr-wobble-skew" data-position="bottom" data-delay="50" data-tooltip="Bares"><i class="material-icons">local_bar</i></a>
         </div>
         <div class="col s3">
-          <a id="transporte" class="waves-effect waves-light btn bottom-btn tooltipped " data-position="bottom" data-delay="50" data-tooltip="Transporte"><i class="material-icons">directions_car</i></a>
+          <a id="transporte" class="waves-effect waves-light btn bottom-btn tooltipped hvr-wobble-skew" data-position="bottom" data-delay="50" data-tooltip="Transporte"><i class="material-icons">directions_car</i></a>
         </div>
         <div class="col s3">
-          <a id="restaurant" class="waves-effect waves-light btn bottom-btn tooltipped" data-position="bottom" data-delay="50" data-tooltip="Restaurantes"><i class="material-icons">restaurant</i></a>
+          <a id="restaurant" class="waves-effect waves-light btn bottom-btn tooltipped hvr-wobble-skew" data-position="bottom" data-delay="50" data-tooltip="Restaurantes"><i class="material-icons">restaurant</i></a>
         </div>
       </div>
     </div>
@@ -41,12 +44,12 @@
     <div class="infor row">
         <div class="col s6 ">
           <!--Boton de Descarga de mapa-->
-          <a href="{{=URL('static', 'construction.html')}}" class="waves-effect waves-light btn col s12 bottom-btn tooltipped " data-position="bottom" data-delay="50" data-tooltip="Guardar Mapa"><i class="material-icons">map
+          <a href="{{=URL('static', 'construction.html')}}" class="waves-effect waves-light btn col s12 bottom-btn tooltipped hvr-float" data-position="bottom" data-delay="50" data-tooltip="Guardar Mapa"><i class="material-icons">map
           </i></a>
         </div>
         <div class="col s6 ">
           <!--Boton de Trazar Ruta-->
-          <a href="#" class="waves-effect waves-light btn col s12 bottom-btn tooltipped " data-position="bottom" data-delay="50" data-tooltip="Ruta"><i class="material-icons">near_me
+          <a href="#" class="waves-effect waves-light btn col s12 bottom-btn tooltipped hvr-float" data-position="bottom" data-delay="50" data-tooltip="Ruta"><i class="material-icons">near_me
           </i></a>
         </div>
     </div>

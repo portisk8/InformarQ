@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="../static/css/materialize.min.css">
     <link rel="stylesheet" href="../static/css/infoController.css">
     <link rel="stylesheet" href="{{=URL('static','css/animate.css')}}">
+    <link href="../static/css/hover-min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="{{=URL('static','images/favicon.ico')}}" type="image/x-icon">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" media="all">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Información Bienal 2016</title>
   </head>
@@ -17,13 +20,13 @@
     <div class="infor row card cyan lighten-5 animated zoomInDown">
      <div class="row">
         <div class="col s4">
-          <a class="waves-effect waves-light btn bottom-btn tooltipped " onclick="btn1Click();" data-position="bottom" data-delay="50" data-tooltip="Fundación Urunday"><i class="material-icons">account_balance</i></a>
+          <a class="waves-effect waves-light btn bottom-btn tooltipped hvr-wobble-skew" onclick="btn1Click();" data-position="bottom" data-delay="50" data-tooltip="Fundación Urunday"><i class="material-icons">account_balance</i></a>
         </div>
         <div class="col s4">
-          <a class="waves-effect waves-light btn bottom-btn tooltipped " onclick="btn2Click();" data-position="bottom" data-delay="50" data-tooltip="Bienal 2016"><i class="material-icons">streetview</i></a>
+          <a class="waves-effect waves-light btn bottom-btn tooltipped hvr-wobble-skew" onclick="btn2Click();" data-position="bottom" data-delay="50" data-tooltip="Bienal 2016"><i class="material-icons">streetview</i></a>
         </div>
         <div class="col s4">
-          <a class="waves-effect waves-light btn bottom-btn tooltipped " onclick="btn3Click();" data-position="bottom" data-delay="50" data-tooltip="Bienal 2014"><i class="material-icons">fast_forward</i></a>
+          <a class="waves-effect waves-light btn bottom-btn tooltipped hvr-wobble-skew" onclick="btn3Click();" data-position="bottom" data-delay="50" data-tooltip="Bienal 2014"><i class="material-icons">fast_forward</i></a>
         </div>
       </div>
     </div>
@@ -37,7 +40,7 @@
         <p id="cardContent"></p>
         <p><br></p>
         <div class="card-action">
-              <a id="cardWLink" href="#"><span id="cardLink">+Info Bienal</span></a>
+              <a id="cardWLink" href="#"><span id="cardLink" class="hvr-bob">+Info Bienal</span></a>
         </div>
       </div>
       <div class="card-reveal cyan lighten-5">
@@ -50,7 +53,7 @@
     
     <div class="infor row">
       <!--WEB-->
-        <a href="{{=URL('download_pdf')}}" class="waves-effect waves-light btn col s12 bottom-btn tooltipped " data-position="bottom" data-delay="50" data-tooltip="Descarga Información"><i class="material-icons">picture_as_pdf</i></a>
+        <a href="{{=URL('download_pdf')}}" class="waves-effect waves-light btn col s4 offset-s4 m2 offset-m5 bottom-btn tooltipped hvr-float" data-position="bottom" data-delay="50" data-tooltip="Descarga Información"><i class="material-icons">picture_as_pdf</i></a>
         <!--Mobile-->
         <!-- <a href="javascript:openUrl()" class="waves-effect waves-light btn col s12 bottom-btn tooltipped animated bounceIn" data-position="bottom" data-delay="50" data-tooltip="Descarga Información"><i class="material-icons">picture_as_pdf</i></a> -->
     </div>

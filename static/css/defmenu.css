@@ -40,7 +40,7 @@ main {
 	background-position: center;
 }
 .panorama.image2{
-	background: url('../images/foto0.jpg');
+	background: url('../images/about1.jpg');
 	background-size: 150%;
 	background-position: center;
 }
@@ -89,3 +89,4 @@ main {
 #btnIcon{
     margin-left: 10px;
 }
+
