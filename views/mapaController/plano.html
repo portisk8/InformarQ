@@ -3,6 +3,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="{{=URL('static','js/jquery.js')}}"></script>
+    <script src="{{=URL('static','js/jquery.elevatezoom.js')}}"></script>
+    <script src="{{=URL('static','js/planozoom.js')}}"></script>
     <script src="{{=URL('static','js/materialize.min.js')}}"></script>
     <link rel="stylesheet" href="{{=URL('static','css/materialize.min.css')}}">
     <link rel="stylesheet" href="{{=URL('static','css/plano.css')}}">
@@ -17,8 +19,8 @@
       
       <div class="row">
       <div class="col s12">
-      <div class="container animated bounceIn " id="cplano">
-      <div id="plano" align="center"><iframe src="http://www.bienaldelchaco.com/stands2015-3/mapa_2015.html" width="100%" height="410" frameborder="0" scrolling="no"></iframe>
+      <div class="container animated bounceIn ">
+      <div align="center"><img id="zoom_07" src="{{=URL('static','images/BIELimpio2.png')}}" data-zoom-image="{{=URL('static','images/BIECompleto2.png')}}"/>
           </div>   
         </div>
       </div>
@@ -42,5 +44,10 @@
    
     </div>
      </div>
+     <script>$("#zoom_07").elevateZoom({
+  zoomType        : "lens",
+  lensShape : "round",
+  lensSize    : 200
+});</script>
   </body>
 </html>
