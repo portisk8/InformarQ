@@ -17,10 +17,10 @@
   </head>
   <body>
       
-      <div class="row">
+      <div class="row" id="cplano">
       <div class="col s12">
       <div class="container animated bounceIn ">
-      <div align="center"><img id="zoom_07" src="{{=URL('static','images/BIELimpio2.png')}}" data-zoom-image="{{=URL('static','images/BIECompleto2.png')}}"/>
+      <div align="center"><img src="{{=URL('static','images/BIELimpio2.png')}}" data-zoom-image="{{=URL('static','images/BIECompleto2.png')}}"/>
           </div>   
         </div>
       </div>
@@ -43,11 +43,6 @@
      <a href="{{=URL('default','index')}}" class="btn-floating btn-large waves-effect waves-light right red fixed-btn-bottom"><i class="material-icons">home</i></a>
    
     </div>
-     </div>
-     <script>$("#zoom_07").elevateZoom({
-  zoomType        : "lens",
-  lensShape : "round",
-  lensSize    : 200
-});</script>
+     <script>$('img').elevateZoom({zoomType:"inner"});</script>
   </body>
 </html>
