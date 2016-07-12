@@ -3,7 +3,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="../static/js/jquery.js"></script>
-    <script src="../static/js/elevatezoom.js"></script>
     <script src="../static/js/jquery.elevatezoom.js"></script>
     <script src="../static/js/materialize.min.js"></script>
     <link rel="stylesheet" href="../static/css/materialize.min.css">
@@ -18,52 +17,52 @@
         <div class="card-content white-text">
           <ul class="collapsible popout hide-on-large-only" data-collapsible="accordion">
             <li>
-              <div class="collapsible-header"><i class="material-icons">whatshot</i>Plano Completo</div>
+              <div class="collapsible-header"><i class="material-icons">account_balance</i>Plano Completo</div>
               <div class="collapsible-body"><img id ="mobileImg" align="center" src="../static/images/BIECompleto2.png"></div>
             </li>
             <li>
-              <div class="collapsible-header"><i class="material-icons">filter_drama</i>Escultores Internacionales</div>
+              <div class="collapsible-header"><i class="material-icons">people</i>Escultores Internacionales</div>
               <div class="collapsible-body"><img id ="mobileImg" align="center" src="../static/images/escultoresInt.png"></div>
             </li>
             <li>
-              <div class="collapsible-header"><i class="material-icons">place</i>Maestros Artesanos</div>
-              <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+              <div class="collapsible-header"><i class="material-icons">supervisor_account</i>Maestros Artesanos</div>
+              <div class="collapsible-body"><img id ="mobileImg" align="center" src="../static/images/maeArtesanos.png"></div>
             </li>
             <li>
-              <div class="collapsible-header"><i class="material-icons">whatshot</i>Artesanos</div>
-              <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+              <div class="collapsible-header"><i class="material-icons">person</i>Artesanos</div>
+              <div class="collapsible-body"><img id ="mobileImg" align="center" src="../static/images/artesanos.png"></div>
             </li>
             <li>
-              <div class="collapsible-header"><i class="material-icons">whatshot</i>Escultura y Pintura</div>
-              <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+              <div class="collapsible-header"><i class="material-icons">palette</i>Escultura y Pintura</div>
+              <div class="collapsible-body"><img id ="mobileImg" align="center" src="../static/images/esculturapintura.png"></div>
             </li>
             <li>
-              <div class="collapsible-header"><i class="material-icons">whatshot</i>Manualidades</div>
-              <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+              <div class="collapsible-header"><i class="material-icons">widgets</i>Manualidades</div>
+              <div class="collapsible-body"><img id ="mobileImg" align="center" src="../static/images/manualidades.png"></div>
             </li>
             <li>
-              <div class="collapsible-header"><i class="material-icons">whatshot</i>Originarios</div>
+              <div class="collapsible-header"><i class="material-icons">av_timer</i>Originarios</div>
               <div class="collapsible-body"><img id ="mobileImg" align="center" src="../static/images/originarios.png"></div>
             </li>
             <li>
-              <div class="collapsible-header"><i class="material-icons">whatshot</i>Oficiales</div>
-              <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+              <div class="collapsible-header"><i class="material-icons">verified_user</i>Oficiales</div>
+              <div class="collapsible-body"><img id ="mobileImg" align="center" src="../static/images/oficiales.png"></div>
             </li>
             <li>
-              <div class="collapsible-header"><i class="material-icons">whatshot</i>Empresas</div>
-              <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+              <div class="collapsible-header"><i class="material-icons">business</i>Empresas</div>
+              <div class="collapsible-body"><img id ="mobileImg" align="center" src="../static/images/empresas.png"></div>
             </li>
             <li>
-              <div class="collapsible-header"><i class="material-icons">whatshot</i>Stands</div>
-              <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+              <div class="collapsible-header"><i class="material-icons">store</i>Stands</div>
+              <div class="collapsible-body"><img id ="mobileImg" align="center" src="../static/images/stands.png"></div>
             </li>
             <li>
-              <div class="collapsible-header"><i class="material-icons">whatshot</i>Patio de Comidas</div>
-              <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+              <div class="collapsible-header"><i class="material-icons">restaurant</i>Patio de Comidas</div>
+              <div class="collapsible-body"><img id ="mobileImg" align="center" src="../static/images/patiodecomidas.png"></div>
             </li>
             <li>
-              <div class="collapsible-header"><i class="material-icons">whatshot</i>Sanitarios</div>
-              <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+              <div class="collapsible-header"><i class="material-icons">transfer_within_a_station</i>Sanitarios</div>
+              <div class="collapsible-body"><img id ="mobileImg" align="center" src="../static/images/sanitarios.png"></div>
             </li>
           </ul>
           <div class="centerImage hide-on-med-and-down" align="center">
@@ -75,7 +74,7 @@
     
     <div class="infor row">
       <!--WEB-->
-        <a href="{{=URL('download_pdf')}}" class="waves-effect waves-light btn col s4 offset-s4 m2 offset-m5 bottom-btn tooltipped hvr-float" data-position="bottom" data-delay="50" data-tooltip="Descarga Plano de la Bienal"><i class="material-icons">picture_as_pdf</i></a>
+        <a href="{{=URL('downloadPlano')}}" class="waves-effect waves-light btn col s4 offset-s4 m2 offset-m5 bottom-btn tooltipped hvr-float" data-position="bottom" data-delay="50" data-tooltip="Descarga Plano de la Bienal"><i class="material-icons">picture_as_pdf</i></a>
         <!--Mobile-->
         <!-- <a href="javascript:openUrl()" class="waves-effect waves-light btn col s12 bottom-btn tooltipped animated bounceIn" data-position="bottom" data-delay="50" data-tooltip="Descarga Información"><i class="material-icons">picture_as_pdf</i></a> -->
     </div>
@@ -92,7 +91,7 @@
     </script>
     <script>
       $("#zoom_07").elevateZoom({
-        zoomType        : "lens",
+        zoomType : "lens",
         lensShape : "round",
         lensSize    : 300,
       });
