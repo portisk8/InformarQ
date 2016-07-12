@@ -7,6 +7,9 @@ def index():
 def plano():
 	return dict()
 
+def bienal():
+	return dict()
+
 def getMarkers():
 	mapas = []
 	rows = db(db.mapa.id>0).select()
