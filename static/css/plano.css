@@ -27,17 +27,16 @@ body {
   padding: 10px 15px !important;  
   height: 56px;
   margin-top: 17%;
+
 }
 
 .fixed-btn-bottom{
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   }
 
-#plano{
-    margin-top: 5%;
-    left: 0px;
-    top: 0px;
-    width: 100%;
-    height: 40%;
+}
+#cplano{
+width: 70%;
+height: 50%;
 
 }
