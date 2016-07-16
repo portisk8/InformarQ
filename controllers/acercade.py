@@ -1,3 +1,3 @@
 # -*- coding: utf-8 -*-
-def index(): 
+def index():
     return dict()
