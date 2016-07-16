@@ -6,6 +6,7 @@
     <script src="{{=URL('static','js/jquery.elevatezoom.js')}}"></script>
     <script src="{{=URL('static','js/planozoom.js')}}"></script>
     <script src="{{=URL('static','js/materialize.min.js')}}"></script>
+    <script src="../static/js/jquery.zoomooz.min.js"></script>
     <link rel="stylesheet" href="{{=URL('static','css/materialize.min.css')}}">
     <link rel="stylesheet" href="{{=URL('static','css/plano.css')}}">
     <link rel="stylesheet" href="{{=URL('static','css/animate.css')}}">
@@ -17,30 +18,28 @@
   </head>
   <body>
       
-      <div class="row" id="cplano">
+      
+      
+    <!--BOTONES FOOTER-->
+     <div class="container">
+     <div class="" id="cplano">
       <div class="col s12">
-      <div class="container animated bounceIn ">
-      <div align="center"><img src="{{=URL('static','images/BIELimpio2.png')}}" data-zoom-image="{{=URL('static','images/BIECompleto2.png')}}"/>
-          </div>   
+      <div class="animated bounceIn ">
+      <div id="mapa" align="center"><img src="{{=URL('static','images/BIELimpio2.png')}}" data-zoom-image="{{=URL('static','images/BIECompleto2.jpg')}}"/></div>   
         </div>
       </div>
     </div>
-    <!--BOTONES FOOTER-->
-  <br>  
-  <br>  
-  <br>  
-  <br>  
- <div class="infor row container">
-      <div class="col s4 offset-s4 m2 offset-m5">
-        <a href="{{=URL('downloadPlano')}}" class="waves-effect waves-light btn col s12 bottom-btn tooltipped animated bounceIn" data-position="bottom" data-delay="50" data-tooltip="Descarga Información"><i class="material-icons">picture_as_pdf</i></a>
+    </div>
+     <div class="infor row container">
+          <div class="col s4 offset-s4 m2 offset-m5">
+            <a href="{{=URL('downloadPlano')}}" class="waves-effect waves-light btn col s12 bottom-btn tooltipped animated bounceIn" data-position="bottom" data-delay="50" data-tooltip="Descarga Información"><i class="material-icons">picture_as_pdf</i></a>
       </div>
-      <br>  
-  <br>  
-  <br> 
+  
     <!--Boton de Got to Home-->
      <a href="{{=URL('default','index')}}" class="btn-floating btn-large waves-effect waves-light right red fixed-btn-bottom"><i class="material-icons">home</i></a>
    
     </div>
-     <script>$('img').elevateZoom({zoomType:"inner"});</script>
+
   </body>
+  <script>$('img').elevateZoom({zoomType:"inner"});</script>
 </html>

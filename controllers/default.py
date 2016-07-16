@@ -59,5 +59,5 @@ def call():
     """
     return service()
 
-def menuExpandible():
+def menuBoton():
     return dict()

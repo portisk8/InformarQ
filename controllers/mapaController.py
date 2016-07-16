@@ -60,7 +60,7 @@ def getBares():
 			'lng': row.lng,
 			'title': row.nombre,
 			'infoWindow': { 'content': "<h4>" + row.nombre +"</h4>"+ row.tel +"<p>Direccion: "+row.direccion+"</p><p>"+row.descripcion+"</p>" },
-			'icon':'../static/icons/icon_lightblue32.png',
+			'icon':'../static/icons/icon_lightblue323.png',
 		}
 		mapas.append(mapa)
 	return response.json(mapas)
@@ -74,6 +74,7 @@ def getTransporte():
 			'lng': row.lng,
 			'title': row.nombre,
 			'infoWindow': { 'content': "<h4>" + row.nombre +"</h4>"+ row.tel +"<p>Direccion: "+row.direccion+"</p><p>"+row.descripcion+"</p>" },
+			'icon':'../static/icons/icon_yellow32.png',
 		}
 		mapas.append(mapa)
 	return response.json(mapas)

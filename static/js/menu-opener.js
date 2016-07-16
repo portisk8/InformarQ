@@ -1,4 +1,5 @@
 $(".menu-opener").click(function(){
+  $("#ocultar").toggle();
   $(".menu-opener, .menu-opener-inner, .menu").toggleClass("active");
 });
 

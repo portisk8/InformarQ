@@ -1,5 +1,6 @@
-$("#zoom_07").elevateZoom({
-  zoomType				: "lens",
-  lensShape : "round",
-  lensSize    : 200
+$(document).ready(function() {
+    $("#element").click(function(evt) {
+        $(this).zoomTo({targetsize:15, duration:600});
+        evt.stopPropagation();
+    });
 });
