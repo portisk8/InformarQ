@@ -1,0 +1,21 @@
+(dp1
+S'output'
+p2
+S"<type 'exceptions.TypeError'> 'module' object is not callable"
+p3
+sS'layer'
+p4
+S'/home/pi/Desktop/web2py/applications/InformarQ/controllers/mapaController.py'
+p5
+sS'code'
+p6
+S'from gluon.serializers import loads_json\n\t\ndef index():\n\tmapas = db().select(db.mapa.ALL)\n\treturn dict(mapa=mapas)\n\ndef plano():\n\treturn dict()\n\ndef bienal():\n\treturn dict()\n\ndef getMarkers():\n\tmapas = []\n\trows = db(db.mapa.id>0).select()\n\tfor row in rows:\n\t\tmapa = {\n\t\t\t\'lat\': row.lat,\n\t\t\t\'lng\': row.lng,\n\t\t\t\'title\': row.nombre,\n\t\t\t\'infoWindow\': { \'content\': "<h1>" + row.nombre +"</h1>"+ row.tel +"<p>Direccion: "+row.direccion+"</p><p>"+row.descripcion+"</p>" },\t\n\t\t}\n\t\tmapas.append(mapa)\n\treturn response.json(mapas)\n\ndef getRestaurantes():\n\tmapas = []\n\trows = db(db.mapa.tipo==\'Restaurante\').select()\n\tfor row in rows:\n\t\tmapa = {\n\t\t\t\'lat\': row.lat,\n\t\t\t\'lng\': row.lng,\n\t\t\t\'title\': row.nombre,\n\t\t\t\'infoWindow\': { \'content\': "<h4>" + row.nombre +"</h4>"+ row.tel +"<p>Direccion: "+row.direccion+"</p><p>"+row.descripcion+"</p>"},\n\t\t\t\'icon\':\'../static/icons/icon_green32.png\',\n\t\t}\n\t\tmapas.append(mapa)\n\treturn response.json(mapas)\n\ndef getServicio():\n\tmapas = []\n\trows = db(db.mapa.tipo==\'Estacion de Servicio\').select()\n\tfor row in rows:\n\t\tmapa = {\n\t\t\t\'lat\': row.lat,\n\t\t\t\'lng\': row.lng,\n\t\t\t\'title\': row.nombre,\n\t\t\t\'infoWindow\': { \'content\': \'<h3>\' + row.nombre +\'</h3>\'+ row.tel +\'<p>Direccion: \'+row.direccion+\'</p><p>\'+row.descripcion+\'</p>\' },\n\t\t\t\'icon\':\'../static/icons/icon_pink32.png\',\n\t\t}\n\t\tmapas.append(mapa)\n\treturn response.json(mapas)\n\ndef getBares():\n\tmapas = []\n\trows = db(db.mapa.tipo==\'Bar\').select()\n\tfor row in rows:\n\t\tmapa = {\n\t\t\t\'lat\': row.lat,\n\t\t\t\'lng\': row.lng,\n\t\t\t\'title\': row.nombre,\n\t\t\t\'infoWindow\': { \'content\': "<h4>" + row.nombre +"</h4>"+ row.tel +"<p>Direccion: "+row.direccion+"</p><p>"+row.descripcion+"</p>" },\n\t\t\t\'icon\':\'../static/icons/icon_lightblue323.png\',\n\t\t}\n\t\tmapas.append(mapa)\n\treturn response.json(mapas)\n\ndef getTransporte():\n\tmapas = []\n\trows = db(db.mapa.tipo==\'Transporte\').select()\n\tfor row in rows:\n\t\tmapa = {\n\t\t\t\'lat\': row.lat,\n\t\t\t\'lng\': row.lng,\n\t\t\t\'title\': row.nombre,\n\t\t\t\'infoWindow\': { \'content\': "<h4>" + row.nombre +"</h4>"+ row.tel +"<p>Direccion: "+row.direccion+"</p><p>"+row.descripcion+"</p>" },\n\t\t\t\'icon\':\'../static/icons/icon_yellow32.png\',\n\t\t}\n\t\tmapas.append(mapa)\n\treturn response.json(mapas)\n\n#Abajo la funcion para descargar PDF\ndef downloadPlano():\n\tfile_id = 4\n\timport cStringIO \n\timport contenttype as c\n\ts=cStringIO.StringIO() \n\t(filename,file) = db.info.archivo.retrieve(db.info[file_id].archivo)\n\ts.write(file.read())  \n\tresponse.headers[\'Content-Type\'] = c.contenttype(filename)\n\tresponse.headers[\'Content-Disposition\'] = \\\n\t"attachment; filename=%s" % filename  \n\treturn s.getvalue()\nresponse._vars=response._caller(getTransporte)\n'
+p7
+sS'snapshot'
+p8
+(dp9
+sS'traceback'
+p10
+S'Traceback (most recent call last):\n  File "/home/pi/Desktop/web2py/gluon/restricted.py", line 227, in restricted\n    exec ccode in environment\n  File "/home/pi/Desktop/web2py/applications/InformarQ/controllers/mapaController.py", line 94, in <module>\n  File "/home/pi/Desktop/web2py/gluon/globals.py", line 411, in <lambda>\n    self._caller = lambda f: f()\n  File "/home/pi/Desktop/web2py/applications/InformarQ/controllers/mapaController.py", line 80, in getTransporte\n    return response.json(mapas)\n  File "/home/pi/Desktop/web2py/gluon/globals.py", line 655, in json\n    return json(data, default=default or custom_json)\nTypeError: \'module\' object is not callable\n'
+p11
+s.
