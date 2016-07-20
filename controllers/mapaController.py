@@ -9,6 +9,9 @@ def plano():
 
 def bienal():
 	return dict()
+	
+def mapa():
+	return dict()
 
 def getAll():
 	mapas = []
