@@ -1,5 +1,6 @@
 body {
-  background-image: url("../images/wlp/wl2.jpg");
+  /*background-image: url("../images/wlp/wl2.jpg");*/
+  background-color: transparent;
   background-repeat: no-repeat;
   ­webkit­background­size:cover;
   ­moz­background­size:cover;
